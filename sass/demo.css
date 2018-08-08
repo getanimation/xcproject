@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-size: 0.33816rem;
+}
+
+.container {
+  display: none;
+  position: relative;
+}
+
+.container .header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 1.08696rem;
+  border: 0.02415rem solid #ccc;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  padding: 0.24155rem;
+}
+
+.container .header input {
+  flex: 1;
+  height: 0.72464rem;
+  border: 0.02415rem solid #999;
+  border-radius: 0.12077rem;
+  padding-left: 0.72464rem;
+  box-shadow: -0.02415rem 0.02415rem 0.02415rem #ccc;
+  background: url("../imgs/glass.png") no-repeat 0.14493rem 0.14493rem/0.43478rem auto;
+  background-color: white;
+}
+
+.container .header a {
+  flex-basis: 0.94203rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0.12077rem;
+}
+
+.container .header a img {
+  width: 0.48309rem;
+}
+
+.container .header a span {
+  font-size: 0.36232rem;
+  color: #11a2df;
+}
+
+.container .main {
+  padding: 1.08696rem 0.12077rem 0rem 0.12077rem;
+  background-color: #ddd;
+}
+
+.container .main .banner {
+  margin: 0rem -0.12077rem;
+}
+
+.container .main .banner img {
+  width: 100%;
+}
+
+.container .main .banner .swiper-pagination {
+  text-align: right;
+  margin-bottom: -0.24155rem;
+}
+
+.container .main .banner .swiper-pagination .swiper-pagination-bullet {
+  width: 0.14493rem;
+  height: 0.14493rem;
+  border-radius: 0.07246rem;
+}
+
+.container .main .banner .swiper-pagination .swiper-pagination-bullet-active {
+  width: 0.36232rem;
+  background-color: #fff;
+}
+
+.container .main .nav {
+  height: 2.41546rem;
+  margin-top: 0.12077rem;
+  border-radius: 0.12077rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.21739rem 0rem;
+}
+
+.container .main .nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .main .nav a img {
+  width: 1.37681rem;
+  height: 1.37681rem;
+}
+
+.container .main .nav a span {
+  font-size: 0.38647rem;
+  color: #666;
+}
+
+.container .main .center {
+  margin-top: 0.12077rem;
+  background-color: #fff;
+  border-radius: 0.24155rem;
+}
+
+.container .main .center .section1 {
+  background: linear-gradient(to right, #fa5a55, #fa9a4e);
+  border-top-left-radius: 0.24155rem;
+  border-top-right-radius: 0.24155rem;
+}
+
+.container .main .center .section1 .left {
+  background: url("../imgs/item1.png") no-repeat center bottom/100% auto;
+}
+
+@media screen and (min-width: 500px) {
+  .container .main .center .section1 .left {
+    background: url("../imgs/item1.png") no-repeat center bottom/3.23671rem auto;
+  }
+}
+
+.container .main .center .section2 {
+  background: linear-gradient(to right, #4b91ed, #53baed);
+  margin-top: 0.12077rem;
+}
+
+.container .main .center .section2 .left {
+  background: url("../imgs/item2.png") no-repeat center bottom/100% auto;
+}
+
+@media screen and (min-width: 500px) {
+  .container .main .center .section2 .left {
+    background: url("../imgs/item2.png") no-repeat center bottom/3.23671rem auto;
+  }
+}
+
+.container .main .center .section3 {
+  margin-top: 0.12077rem;
+  background: linear-gradient(to right, #34c2a8, #6ad359);
+  border-bottom-left-radius: 0.24155rem;
+  border-bottom-right-radius: 0.24155rem;
+}
+
+.container .main .center .section3 .left {
+  background: url("../imgs/item3.png") no-repeat center bottom/100% auto;
+}
+
+@media screen and (min-width: 500px) {
+  .container .main .center .section3 .left {
+    background: url("../imgs/item3.png") no-repeat center bottom/3.23671rem auto;
+  }
+}
+
+.container .main .center .section {
+  height: 2.41546rem;
+  display: flex;
+}
+
+.container .main .center .section .left {
+  flex: 1;
+  border-right: 0.02415rem solid #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.50725rem;
+}
+
+.container .main .center .section .left a {
+  color: #fff;
+}
+
+.container .main .center .section .right {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .main .center .section .right a {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container .main .center .section .right a:nth-child(1), .container .main .center .section .right a:nth-child(2) {
+  border-bottom: 0.02415rem solid #fff;
+}
+
+.container .main .center .section .right a:nth-child(1), .container .main .center .section .right a:nth-child(3) {
+  border-right: 0.02415rem solid #fff;
+}
+
+.container .main .subnav {
+  padding: 0.21739rem 0rem;
+  margin-top: 0.12077rem;
+  height: 2.89855rem;
+  background-color: #fff;
+  border-radius: 0.24155rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container .main .subnav a {
+  width: 16.6666666666%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .main .subnav a img {
+  width: 0.60386rem;
+  height: 0.60386rem;
+}
+
+.container .main .subnav a span {
+  font-size: 0.33816rem;
+  color: #666;
+}
+
+.searchpage {
+  position: relative;
+}
+
+.searchpage .header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 1.08696rem;
+  background-color: #e6f0f7;
+  border-bottom: 0.02415rem solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0.24155rem;
+}
+
+.searchpage .header .back {
+  flex-basis: 0.72464rem;
+  background: url("../imgs/back.png") 0rem 0rem/auto 0.72464rem no-repeat;
+  height: 0.72464rem;
+}
+
+.searchpage .header input {
+  flex: 1;
+  height: 0.72464rem;
+  border: 0.02415rem solid #999;
+  border-radius: 0.12077rem;
+  padding-left: 0.72464rem;
+  box-shadow: -0.02415rem 0.02415rem 0.02415rem #ccc;
+  background: url("../imgs/glass.png") 0.14493rem 0.14493rem/0.43478rem auto no-repeat, linear-gradient(to right, #fff, #fff);
+}
+
+.searchpage .header .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0.94203rem;
+  margin-left: 0.12077rem;
+  color: #666;
+}
